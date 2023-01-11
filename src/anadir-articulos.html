@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lista de la compra superguay">
-  <title>Lista de la compra</title>
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>Lista de la compra - Añadir artículos</title>
 </head>
 
 <body>
@@ -25,13 +24,18 @@
     </section>
   </header>
   <main>
-    <ul>
-      <li><label><input type="checkbox">Pan</label><span>0.75€</span></li>
-      <li><label><input type="checkbox">Azúcar</label><span></span></li>
-      <li><label><input type="checkbox">Leche</label><span>1.20€</span></li>
-      <li><label><input type="checkbox">Tofu</label><span>4.35€</span></li>
-    </ul>
-    <p>6.3€</p>
+    <h2>Añadir artículo</h2>
+    <form>
+      <label>
+        Nombre:
+        <input type="text">
+      </label>
+      <label>
+        Precio:
+        <input type="number">€
+      </label>
+      <button type="submit">Añadir</button>
+    </form>
   </main>
 </body>
 
