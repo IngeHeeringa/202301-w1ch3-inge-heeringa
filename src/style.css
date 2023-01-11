@@ -17,11 +17,6 @@ body {
   min-width: 100vw;
 }
 
-.container {
-  min-height: inherit;
-  min-width: inherit;
-}
-
 h1 {
   font-size: 2.5rem;
 }
@@ -46,10 +41,6 @@ li {
   list-style-type: none;
 }
 
-.container > * {
-  padding: 2rem 1rem;
-}
-
 form,
 label,
 .container,
@@ -60,14 +51,6 @@ label,
   display: flex;
 }
 
-form {
-  padding-top: 2rem;
-}
-
-.nav-list {
-  gap: 0.5rem;
-}
-
 main,
 form,
 .container,
@@ -75,8 +58,33 @@ form,
   flex-direction: column;
 }
 
+header {
+  background-color: #289988;
+}
+
+section {
+  background-color: #43a080;
+}
+
 main {
+  background-color: #fec844;
   flex: 1;
+}
+
+header,
+section {
+  color: #fff;
+  align-items: center;
+}
+
+header,
+section,
+.shopping-list__item {
+  justify-content: space-between;
+}
+
+form {
+  padding-top: 2rem;
 }
 
 input {
@@ -92,26 +100,6 @@ button {
   padding: 1rem;
 }
 
-header {
-  background-color: #289988;
-}
-
-header,
-section {
-  color: #fff;
-  align-items: center;
-}
-
-header,
-section,
-.shopping-list__item {
-  justify-content: space-between;
-}
-
-section {
-  background-color: #43a080;
-}
-
 section i {
   font-size: 3rem;
 }
@@ -120,22 +108,17 @@ input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
-.form__input {
-  margin: 1rem 0;
+.container {
+  min-height: inherit;
+  min-width: inherit;
 }
 
-.form__input {
-  border: none;
-  padding: 1rem;
+.container > * {
+  padding: 2rem 1rem;
 }
 
-.form__input-label__eurosign::after {
-  content: "€";
-  padding: 0.5rem;
-}
-
-main {
-  background-color: #fec844;
+.nav-list {
+  gap: 0.5rem;
 }
 
 .strikethrough {
@@ -146,9 +129,8 @@ main {
   font-weight: bold;
 }
 
-.total-price {
-  align-self: flex-end;
-  padding: 1rem 0;
+.shopping-list {
+  border-bottom: 0.5px solid rgb(23, 23, 23);
 }
 
 .shopping-list__item {
@@ -160,6 +142,18 @@ main {
   padding-left: 1rem;
 }
 
-.shopping-list {
-  border-bottom: 0.5px solid rgb(23, 23, 23);
+.total-price {
+  align-self: flex-end;
+  padding: 1rem 0;
+}
+
+.form__input {
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.form__input-label__eurosign::after {
+  content: "€";
+  padding: 0.5rem;
 }
