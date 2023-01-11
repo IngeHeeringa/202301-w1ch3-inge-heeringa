@@ -17,7 +17,7 @@
       <nav>
         <ul class="nav-list">
           <li>Principal</li>
-          <li>Lista</li>
+          <li><a href="./index.html">Lista</a></li>
           <li>Acerca de</li>
         </ul>
       </nav>
@@ -29,13 +29,13 @@
     <main>
       <h2>Añadir artículo</h2>
       <form>
-        <label class="form__input-label add">
+        <label class="form__input-label">
           Nombre:
-          <input type="text">
+          <input class="form__input" type="text">
         </label>
         <label class="form__input-label">
           Precio:
-          <input type="number">€
+          <span class="form__input-label__eurosign"><input class="form__input" type="number"></span>
         </label>
         <button type="submit">Añadir</button>
       </form>
