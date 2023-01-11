@@ -1,12 +1,24 @@
 @import url(”/node_modules/@fortawesome/fontawesome-free/css/all.min.css”);
 
+* {
+  margin: 0;
+}
+
 html {
   font-size: 10px;
+  box-sizing: border-box;
 }
 
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 300;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  min-height: inherit;
+  min-width: inherit;
 }
 
 h1 {
@@ -26,6 +38,10 @@ li {
   font-size: 1.1rem;
 }
 
+.container > * {
+  padding: 1rem;
+}
+
 .container,
 .container > *,
 .nav-list,
@@ -34,7 +50,7 @@ li {
 }
 
 .nav-list {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 main,
@@ -54,6 +70,7 @@ section {
 }
 
 header,
+section,
 .shopping-list-items {
   justify-content: space-between;
 }
@@ -68,4 +85,12 @@ main {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.total-price {
+  align-self: flex-end;
 }
