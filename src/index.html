@@ -11,28 +11,52 @@
 </head>
 
 <body>
-  <header>
-    <h1>Lista de la compra</h1>
-    <nav>
-      <ul>
-        <li>Principal</li>
-        <li>Lista</li>
-        <li>Acerca de</li>
-      </ul>
-    </nav>
+  <div class="container">
+    <header>
+      <h1>Lista de la compra</h1>
+      <nav>
+        <ul class="nav-list">
+          <li>Principal</li>
+          <li>Lista</li>
+          <li>Acerca de</li>
+        </ul>
+      </nav>
+    </header>
     <section>
-      <p>(icon) 2/3 comprados</p>
+      <p><i class="fa-solid fa-circle-plus"></i> 2/3 comprados</p>
     </section>
-  </header>
-  <main>
-    <ul>
-      <li><label><input type="checkbox">Pan</label><span>0.75€</span></li>
-      <li><label><input type="checkbox">Azúcar</label><span></span></li>
-      <li><label><input type="checkbox">Leche</label><span>1.20€</span></li>
-      <li><label><input type="checkbox">Tofu</label><span>4.35€</span></li>
-    </ul>
-    <p>6.3€</p>
-  </main>
+    <main>
+      <ul>
+        <li>
+          <div class="shopping-list-items strikethrough">
+            <label><input type="checkbox">Pan</label>
+            <span class="prices">0.75€<i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="shopping-list-items">
+            <label><input type="checkbox">Azúcar</label>
+            <span class="prices"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="shopping-list-items strikethrough">
+            <label><input type="checkbox">Leche</label>
+            <span class="prices">1.20€<i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </li>
+        <li>
+          <div class="shopping-list-items">
+            <label>
+              <input type="checkbox">Tofu</label>
+            <span class="prices">4.35€<i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </li>
+      </ul>
+      <hr>
+      <p>6.3€</p>
+    </main>
+  </div>
 </body>
 
 </html>
